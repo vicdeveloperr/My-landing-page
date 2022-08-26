@@ -39,7 +39,13 @@
 	<title>VicDeveloper</title>
 </head>
 <body>
-	<header class="pt-5 bg-oscuro h-screen">
+	<header class="pt-5 bg-oscuro h-screen relative">
+		<!-- Elemento de envio éxitoso -->
+		<div id="envioExitoso" class="border-claro border-2 rounded inline-block px-2 py-1 fixed z-10 bg-oscuro right-4 flex items-center transition-all duration-150">
+			<img src="./imgs/envio-exitoso.png" alt="Imagen de éxitoso" class="max-w-[45px]">
+			<p class="text-claro ml-3 font-bold">Envio Éxitoso</p>
+		</div>
+
 		<div class="w-11/12 m-auto h-full relative max-w-[1100px]">
 		<div class="flex justify-between absolute w-full items-center">
 			<h1 class="text-2xl text-amarilloIntenso cursor-pointer">VicDeveloper</h1>
@@ -55,7 +61,7 @@
 				<div>
 					<h2 class="text-xl text-claro">
 					Hola soy Victor</h2>
-					<h2 class="text-xl text-amarilloIntenso"><span class="typed"></span></h2>
+					<h2 class="text-xl text-amarilloIntenso">TÚ DESARROLLADOR WEB</h2>
 					<p class="font-light text-claro">
 					Un buen sitio web posiblemente era lo único que tu negocio necesitaba.</p>
 				</div>
@@ -126,7 +132,7 @@
 					Contacta con nosotros y en menos de 15 días tu sitio web estará listo.
 				</p>
 			</div>
-			<form class="text-claro mt-10 700:w-2/4" action="./envio-exitoso.html" data-netlify="true" method="POST" name="contacto">
+			<form class="text-claro mt-10 700:w-2/4" action="./index.html" data-netlify="true" method="POST" name="contacto">
 				<div class="relative">
 					<input class="text-sm font-light bg-transparent border-b-amarilloClaro border-b-[2.5px] focus:outline-none w-full cursor-pointer peer" placeholder=" " id="nombre" name="nombre" required />
 					<label for="nombre" class="absolute left-0 -top-5 cursor-pointer text-amarilloClaro peer-placeholder-shown:-top-1 peer-placeholder-shown:text-claro transition-[top, color] duration-150">
@@ -159,6 +165,6 @@
 		<p class="text-oscuro text-sm font-bold">&copy; Victor Ayala, 2022</p>
 	</footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script type="text/javascript" src="./cerebro/efecto-de-escritura-main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./cerebro/desaparecer-elemento-envio-exitoso.js"></script>
 </html>
