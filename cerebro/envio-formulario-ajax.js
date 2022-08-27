@@ -11,7 +11,11 @@ function enviar(e) {
     body: new URLSearchParams(formData).toString()
   })
     .then(() => {
-    	alert("Envio Éxitoso");
+      let elementoEnvioExitoso = document.querySelector("#envioExitoso");
+      elementoEnvioExitoso.classList.add("inline-block");
+    	let temperozidor = setTimeout(() => {
+        elementoEnvioExitoso.classList.remove("inline-block");
+      }, 3000);
     })
     .catch((error) => alert(error));
 };
