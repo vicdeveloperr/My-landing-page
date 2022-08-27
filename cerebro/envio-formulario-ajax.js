@@ -1,8 +1,7 @@
-setTimeout( a => {
-	$("#envioExitoso").fadeOut();
-}, 4000);
 
-document.querySelector("#formulario-contacto").addEventListener("submit", handleSubmit);
+document
+	.querySelector("#formulario-contacto")
+	.addEventListener("submit", handleSubmit);
 
 const handleSubmit = (e) => {
   e.preventDefault();
