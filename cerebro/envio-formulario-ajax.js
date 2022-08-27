@@ -1,11 +1,11 @@
+let myForm = document.querySelector("#formulario-contacto");
 
-document
+myForm
 	.querySelector("#formulario-contacto")
 	.addEventListener("submit", handleSubmit);
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  let myForm = document.getElementById("#formulario-contacto");
   let formData = new FormData(myForm);
   fetch("/", {
     method: "POST",
