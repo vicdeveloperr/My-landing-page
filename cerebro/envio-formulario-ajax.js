@@ -12,10 +12,12 @@ function enviar(e) {
   })
     .then(() => {
       let elementoEnvioExitoso = document.querySelector("#envioExitoso");
-      elementoEnvioExitoso.classList.add("inline-block");
-    	let temperozidor = setTimeout(() => {
-        elementoEnvioExitoso.classList.remove("inline-block");
+      elementoEnvioExitoso.classList.remove("hidden");
+    	let temporizador = setTimeout(() => {
+        elementoEnvioExitoso.classList.add("hidden");
       }, 3000);
+      clearTimeout(temporizador);
+      console.log("se envio");
     })
     .catch((error) => alert(error));
 };

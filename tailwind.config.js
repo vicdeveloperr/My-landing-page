@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./envio-exitoso.html"],
+  content: ["./index.html", "./envio-exitoso.html", "./cerebro/envio-formulario-ajax.js"],
   theme: {
     extend: {
       colors: {
