@@ -12,6 +12,6 @@ const handleSubmit = (e) => {
   })
     .then(() => {
     	alert("Envio Éxitoso");
-    });
+    })
     .catch((error) => alert(error));
 };
