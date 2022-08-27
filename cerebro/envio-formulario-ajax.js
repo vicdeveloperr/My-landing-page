@@ -1,8 +1,6 @@
 let myForm = document.querySelector("#formulario-contacto");
 
-myForm
-	.querySelector("#formulario-contacto")
-	.addEventListener("submit", handleSubmit);
+myForm.addEventListener("submit", handleSubmit);
 
 const handleSubmit = (e) => {
   e.preventDefault();
