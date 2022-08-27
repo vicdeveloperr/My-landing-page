@@ -1,8 +1,8 @@
 let myForm = document.querySelector("#formulario-contacto");
 
-myForm.addEventListener("submit", handleSubmit);
+myForm.addEventListener("submit", enviar);
 
-const handleSubmit = (e) => {
+function enviar(e) {
   e.preventDefault();
   let formData = new FormData(myForm);
   fetch("/", {
