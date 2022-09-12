@@ -16,7 +16,7 @@ function enviar(e) {
     	let temporizador = setTimeout(() => {
         elementoEnvioExitoso.classList.add("hidden");
         clearTimeout(temporizador);
-      }, 3000);
+      }, 5000);
       console.log("se envio");
     })
     .catch((error) => alert(error));
