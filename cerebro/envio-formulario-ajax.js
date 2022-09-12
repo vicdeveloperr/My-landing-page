@@ -16,7 +16,7 @@ function enviar(e) {
     	let temporizador = setTimeout(() => {
         elementoEnvioExitoso.classList.add("hidden");
         clearTimeout(temporizador);
-      }, 4100);
+      }, 4500);
       // Limpiamos el formulario
       document.querySelector("#nombre").value = null;
       document.querySelector("#email").value = null;
