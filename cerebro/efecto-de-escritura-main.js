@@ -1,8 +1,8 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'ATRAE',
-		'ATRAE, CONVENCE',
-		'ATRAE, CONVENCE Y VENDE'
+		'ATRAER',
+		'ATRAER, CONVENCER',
+		'ATRAER, CONVENCER Y VENDER'
 	],
 
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
