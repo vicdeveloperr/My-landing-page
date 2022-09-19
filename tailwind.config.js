@@ -11,14 +11,20 @@ module.exports = {
         'amarilloIntenso': '#ffba14'
       },
       boxShadow: {
-        'sombraBotones': '0px 0px 17px 4px rgba(58,0,255,0.24)'
+        'sombraBotones': '0px 0px 17px 4px rgba(58,0,255,0.24)',
+        'sombraPlanes': '0px 0px 6px 2px rgba(58,0,255,0.24)'
       },
       screens: {
+      '276': '276px',
       '450': '450px',
+      '546': '546px',
+      '586': '586px',
       '600': '600px',
+      '674': '674px',
       '700': '700px',
       'sm': '640px',
       'md': '768px',
+      '818': '818px',
       '850': '850px',
       'lg': '1024px',
       'xl': '1280px',
