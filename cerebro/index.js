@@ -75,16 +75,17 @@ function enviar(e) {
     body: new URLSearchParams(formData).toString()
   })
     .then(() => {
-      let elementoEnvioExitoso = document.querySelector("#envioExitoso");
-      elementoEnvioExitoso.classList.remove("hidden");
-    	let temporizador = setTimeout(() => {
-        elementoEnvioExitoso.classList.add("hidden");
-        clearTimeout(temporizador);
-      }, 4500);
-      // Limpiamos el formulario
-      document.querySelector("#nombre").value = null;
-      document.querySelector("#email").value = null;
-      document.querySelector("#mensaje").value = null;
+	  document.querySelector("#agregarNombreDelInteresado").textContent = document.querySelector("#nombre").value;
+	  let elementoEnvioExitoso = document.querySelector("#envioExitoso");
+	  elementoEnvioExitoso.classList.remove("hidden");
+		let temporizador = setTimeout(() => {
+	    elementoEnvioExitoso.classList.add("hidden");
+	    clearTimeout(temporizador);
+	  }, 4500);
+	  // Limpiamos el formulario
+	  document.querySelector("#nombre").value = null;
+	  document.querySelector("#email").value = null;
+	  document.querySelector("#mensaje").value = null;
     })
     .catch((error) => alert(error));
 };
