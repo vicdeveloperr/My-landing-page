@@ -61,32 +61,6 @@ if(window.matchMedia("(max-width: 800px)").matches){
 	});
 }
 
-// Animar sección: Porque deberías de elegirme
-// Animar razón 1
-document.querySelector("#imgFijada2")
-.addEventListener("mouseenter", function() {
-	document.querySelector("#contenidoCaracteristica1")
-	.className += " opacity-100"
-});
-// Animar razón 2
-document.querySelector("#caracteristica1")
-.addEventListener("mouseenter", function() {
-	document.querySelector("#contenidoCaracteristica2")
-	.className += " opacity-100"
-});
-// Animar razón 3
-document.querySelector("#caracteristica2")
-.addEventListener("mouseenter", function() {
-	document.querySelector("#contenidoCaracteristica3")
-	.className += " opacity-100"
-});
-// Animar razón 4
-document.querySelector("#caracteristica3")
-.addEventListener("mouseenter", function() {
-	document.querySelector("#contenidoCaracteristica4")
-	.className += " opacity-100"
-});
-
 // Envío del formulario de contacto por ajax
 let myForm = document.querySelector("#formulario-contacto");
 
