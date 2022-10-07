@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./cerebro/envio-formulario-ajax.js"],
+  content: ["./index.html", "./cerebro/index.js"],
   theme: {
     extend: {
       colors: {
@@ -12,12 +12,14 @@ module.exports = {
       },
       boxShadow: {
         'sombraBotones': '0px 0px 17px 4px rgba(58,0,255,0.24)',
-        'sombraPlanes': '0px 0px 6px 2px rgba(58,0,255,0.24)'
+        'sombra': '0px 0px 11px 0px rgba(58,0,255,0.24)'
       },
       screens: {
       '276': '276px',
+      '425': '425px',
       '450': '450px',
       '546': '546px',
+      '570': '570px',
       '586': '586px',
       '600': '600px',
       '674': '674px',
@@ -29,7 +31,7 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px'
-      },
+      }
     },
   },
   plugins: [],
