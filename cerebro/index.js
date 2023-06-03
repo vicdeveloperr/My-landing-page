@@ -1,6 +1,7 @@
+// Activar animaciones de scroll con AOS
 AOS.init();
 
-// Animar sección: Por que deberías tener un sitio web
+// Animar sección: Por qué deberías tener un sitio web
 var razon1 = document.querySelector("#razon1");
 var razon2 = document.querySelector("#razon2");
 var razon3 = document.querySelector("#razon3");
